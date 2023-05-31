@@ -1,0 +1,25 @@
+curl -X POST \
+  http://35.182.231.171:3010/api/contacts/submit \
+  -H 'Accept: */*' \
+  -H 'Accept-Encoding: gzip, deflate' \
+  -H 'Cache-Control: no-cache' \
+  -H 'Connection: keep-alive' \
+  -H 'Content-Length: 309' \
+  -H 'Content-Type: application/json' \
+  -H 'Host: localhost:3005' \
+  -H 'Postman-Token: f6599a07-be12-4839-b347-032b29665b8c,7dd5afec-4512-44b0-a14b-364942aae093' \
+  -H 'User-Agent: PostmanRuntime/7.19.0' \
+  -H 'cache-control: no-cache' \
+  -d '  {
+  "firstName": "first_name",
+  "lastName": "last_name",
+  "email": "email",
+  "company": "companyphone",
+  "phone": "message",
+  "ll_context":
+   { "lltk": "req.cookies.lltk",
+     "ipAddress": "req.connection.remoteAddress",
+     "pageUrl": "localhost/contactus",
+     "pageName": "Contact Us" 
+   } 
+  }'
